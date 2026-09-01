@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GENERAL STORE | لابتوبات وإلكترونيات</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+:root{--bg:#030608;--panel:#0b1114;--panel2:#10191d;--cyan:#08c9f4;--cyan2:#00a8d0;--text:#f5f8fa;--muted:#91a0a8;--line:#1c2a30;--danger:#ff4747}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% 15%,#08212a 0,#030608 35%,#020405 100%);color:var(--text);font-family:Cairo,Arial,sans-serif}
+a{color:inherit;text-decoration:none}button,input{font:inherit}.container{width:min(1180px,92%);margin:auto}
+.topbar{height:32px;background:#071015;border-bottom:1px solid #12242b;text-align:center;font-size:12px;color:#d8e5e9;padding:6px}.topbar b{color:var(--cyan)}
+header{position:relative;z-index:5;padding:16px 0 10px;background:linear-gradient(180deg,rgba(2,6,8,.97),rgba(2,6,8,.78))}
+.nav{display:flex;align-items:center;gap:28px}.brand{position:absolute;left:50%;top:45px;transform:translateX(-50%);text-align:center;line-height:1}
+.logo{width:88px;height:88px;margin:auto;filter:drop-shadow(0 0 14px rgba(8,201,244,.35))}
+.brand-name{font-weight:900;letter-spacing:2px;font-size:28px}.brand-name span{color:var(--cyan);font-size:16px;letter-spacing:6px;display:block;margin-top:4px}
+.navlinks{display:flex;gap:25px;margin-right:auto;font-size:14px}.navlinks a{padding:10px 2px;color:#dbe4e7}.navlinks a.active,.navlinks a:hover{color:var(--cyan)}
+.actions{display:flex;gap:16px;align-items:center;margin-left:auto}.action{color:#dce5e8;font-size:13px;cursor:pointer}.cart{position:relative}.badge{position:absolute;top:-11px;right:-9px;background:var(--cyan);color:#001016;border-radius:20px;min-width:18px;height:18px;text-align:center;font-size:10px;font-weight:800;padding-top:2px}
+.search{margin:22px 0 4px 0;margin-right:auto;width:360px;position:relative}.search input{width:100%;background:#11171a;border:1px solid #354248;border-radius:30px;color:white;padding:13px 45px 13px 18px;outline:none}.search span{position:absolute;right:17px;top:9px;font-size:21px;color:#b7c5ca}
+.hero{min-height:480px;display:flex;align-items:center;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 60%,rgba(0,176,220,.28),transparent 32%),radial-gradient(circle at 35% 75%,rgba(0,104,150,.18),transparent 30%);pointer-events:none}
+.hero-art{width:54%;display:flex;justify-content:center;align-items:center;position:relative}.orb{position:absolute;width:390px;height:390px;border-radius:50%;background:radial-gradient(circle,#0b3441 0,#06202a 42%,transparent 70%);filter:blur(1px)}.laptop{position:relative;width:500px;max-width:95%;filter:drop-shadow(0 30px 30px rgba(0,0,0,.75));transform:perspective(800px) rotateY(8deg) rotateX(2deg)}
+.screen{height:285px;background:linear-gradient(135deg,#0c1920,#061017);border:8px solid #1d2b30;border-bottom:14px solid #162126;border-radius:18px 18px 8px 8px;position:relative;box-shadow:inset 0 0 40px rgba(0,205,255,.16),0 0 45px rgba(0,188,245,.13);overflow:hidden}.screen:after{content:"GENERAL STORE";position:absolute;inset:0;display:grid;place-items:center;color:#159bc0;font-size:34px;font-weight:900;letter-spacing:3px;text-shadow:0 0 22px #00bde9}.screen:before{content:"";position:absolute;width:220px;height:220px;border:2px solid rgba(0,200,255,.25);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
+.base{height:28px;margin:-2px -30px 0;background:linear-gradient(#35434a,#121a1e);clip-path:polygon(6% 0,94% 0,100% 100%,0 100%);border-radius:0 0 16px 16px}.hero-copy{width:46%;position:relative;z-index:1}.eyebrow{color:var(--cyan);font-weight:700;font-size:16px}.hero h1{font-size:48px;line-height:1.15;margin:8px 0}.hero h1 span{color:var(--cyan)}.hero p{color:#c0cbd0;font-size:17px;margin:14px 0 25px}.btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#13d5f8,#009fc7);color:#001117;border:0;border-radius:28px;padding:13px 28px;font-weight:900;cursor:pointer;box-shadow:0 8px 25px rgba(0,191,235,.2)}.btn:hover{transform:translateY(-2px)}
+.features{margin-top:-4px;position:relative;background:rgba(13,22,26,.9);border:1px solid #1a2b31;border-radius:24px;padding:18px 25px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;box-shadow:0 15px 45px #000}.feature{display:flex;gap:13px;align-items:center;padding:8px 14px;border-left:1px solid #26363b}.feature:last-child{border-left:0}.ico{font-size:28px;color:var(--cyan)}.feature b{font-size:14px}.feature small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+.section{padding:48px 0 10px}.section-title{text-align:center;font-size:25px;margin:0 0 26px}.section-title:after{content:"";display:block;width:55px;height:3px;background:var(--cyan);margin:8px auto;border-radius:4px}.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:13px}.cat{background:linear-gradient(180deg,#10191d,#0a1013);border:1px solid #17282e;border-radius:14px;text-align:center;padding:20px 8px;transition:.2s}.cat:hover{border-color:var(--cyan);transform:translateY(-3px)}.cat .cat-icon{font-size:38px;margin-bottom:7px}.cat b{font-size:13px}.cat small{display:block;color:var(--cyan);font-size:10px;margin-top:3px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:linear-gradient(180deg,#10191d,#080d10);border:1px solid #1a3037;border-radius:15px;overflow:hidden;position:relative;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#0ca9d0}.pic{height:210px;background:#f1f4f5;display:flex;align-items:center;justify-content:center;overflow:hidden}.pic img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}.tag{position:absolute;top:10px;right:10px;background:#08b7df;color:#001018;border-radius:5px;padding:3px 8px;font-size:10px;font-weight:900}.discount{position:absolute;top:10px;left:10px;background:var(--danger);border-radius:5px;padding:3px 8px;font-size:10px;font-weight:900}.info{padding:13px}.info h3{font-size:14px;margin:0 0 5px}.spec{color:#8d9ca2;font-size:10px;min-height:30px}.price{display:flex;align-items:center;gap:8px;margin-top:10px}.price strong{font-size:18px;color:#fff}.old{text-decoration:line-through;color:#68767b;font-size:11px}.add{width:100%;margin-top:10px;border:1px solid #164653;background:#07161b;color:var(--cyan);padding:8px;border-radius:8px;cursor:pointer;font-weight:800}.add:hover{background:#0b2b34}
+.stats{margin:45px 0;background:#091217;border:1px solid #1a2c33;border-radius:12px;display:grid;grid-template-columns:repeat(4,1fr);padding:18px}.stat{text-align:center;border-left:1px solid #203137}.stat:last-child{border:0}.stat strong{font-size:23px;color:var(--cyan);display:block}.stat span{font-size:11px;color:#9aa8ad}
+footer{margin-top:55px;border-top:1px solid #17272c;background:#05090b;padding:35px 0;color:#87969b}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:35px}.footer-brand{font-size:24px;color:#fff;font-weight:900}.footer-brand span{color:var(--cyan)}footer h4{color:#fff;margin:0 0 12px}footer p,footer li{font-size:12px;line-height:2;margin:0}footer ul{padding:0;list-style:none}.copy{text-align:center;border-top:1px solid #142126;margin-top:25px;padding-top:20px;font-size:11px}
+.toast{position:fixed;bottom:25px;left:25px;background:#10252c;color:#fff;border:1px solid #1b7288;border-radius:10px;padding:12px 18px;transform:translateY(100px);transition:.3s;z-index:20}.toast.show{transform:translateY(0)}
+@media(max-width:900px){.brand{position:static;transform:none;margin:auto}.nav{flex-wrap:wrap}.navlinks{order:3;width:100%;justify-content:center}.actions{order:2}.search{width:100%;order:4}.hero{flex-direction:column-reverse;padding:35px 0}.hero-copy,.hero-art{width:100%;text-align:center}.hero h1{font-size:37px}.hero-art{margin-top:25px}.features{grid-template-columns:repeat(2,1fr)}.categories{grid-template-columns:repeat(3,1fr)}.products{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:550px){.navlinks{gap:12px;font-size:11px}.actions{font-size:11px}.features{grid-template-columns:1fr}.categories{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr);gap:15px}.stat{border:0}.hero h1{font-size:31px}.laptop{width:350px}.screen{height:210px}}
+</style>
+</head>
+<body>
+<div class="topbar">🚚 شحن مجاني لجميع الطلبات فوق <b>999 جنيه</b> • عروض خاصة كل أسبوع</div>
+
+<header>
+<div class="container nav">
+  <div class="actions">
+    <div class="action">👤 حسابي</div>
+    <div class="action">♡ المفضلة</div>
+    <div class="action cart">🛒 السلة <span class="badge" id="count">0</span></div>
+  </div>
+  <div class="brand">
+    <svg class="logo" viewBox="0 0 100 100" aria-label="Dragon logo">
+      <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#08d7ff"/><stop offset="1" stop-color="#17618a"/></linearGradient></defs>
+      <path fill="none" stroke="url(#g)" stroke-width="8" stroke-linecap="round" d="M68 16C48 7 25 23 31 42c4 12 20 15 30 7-4 19-28 25-43 13 9 27 45 28 60 8 11-15 7-37-10-46z"/>
+      <path fill="none" stroke="url(#g)" stroke-width="5" d="M48 35l14 5-12 8m16-30l8 8-11 2"/>
+      <circle cx="65" cy="29" r="2.5" fill="#fff"/>
+    </svg>
+    <div class="brand-name">GENERAL<span>STORE</span></div>
+  </div>
+  <nav class="navlinks">
+    <a class="active" href="#">الرئيسية</a><a href="#products">اللابتوبات</a><a href="#categories">الأقسام</a><a href="#offers">العروض</a><a href="#contact">تواصل معنا</a>
+  </nav>
+</div>
+<div class="container search"><span>⌕</span><input id="search" placeholder="ابحث عن لابتوب أو منتج..."></div>
+</header>
+
+<main>
+<section class="hero container">
+  <div class="hero-art">
+    <div class="orb"></div>
+    <div class="laptop"><div class="screen"></div><div class="base"></div></div>
+  </div>
+  <div class="hero-copy">
+    <div class="eyebrow">⚡ أحدث التقنيات بين يديك</div>
+    <h1>أداء يفوق <span>التوقعات</span></h1>
+    <p>لابتوبات احترافية للألعاب والعمل والدراسة — اختيارات قوية، أسعار منافسة، وضمان موثوق.</p>
+    <a class="btn" href="#products">تسوق الآن ←</a>
+  </div>
+</section>
+
+<div class="container features">
+  <div class="feature"><div class="ico">🛡</div><div><b>ضمان حقيقي</b><small>منتجات أصلية 100%</small></div></div>
+  <div class="feature"><div class="ico">🚚</div><div><b>شحن سريع</b><small>لكل المحافظات</small></div></div>
+  <div class="feature"><div class="ico">↩</div><div><b>إرجاع سهل</b><small>خلال 14 يوم</small></div></div>
+  <div class="feature"><div class="ico">♧</div><div><b>خدمة عملاء 24/7</b><small>دعم على مدار الساعة</small></div></div>
+</div>
+
+<section class="section container" id="categories">
+<h2 class="section-title">تصفح الأقسام</h2>
+<div class="categories">
+  <a class="cat" href="#products"><div class="cat-icon">💻</div><b>لابتوبات</b><small>عرض المنتجات</small></a>
+  <a class="cat" href="#products"><div class="cat-icon">🎮</div><b>Gaming</b><small>عرض المنتجات</small></a>
+  <a class="cat" href="#products"><div class="cat-icon">🖥️</div><b>شاشات</b><small>عرض المنتجات</small></a>
+  <a class="cat" href="#products"><div class="cat-icon">⌨️</div><b>إكسسوارات</b><small>عرض المنتجات</small></a>
+  <a class="cat" href="#products"><div class="cat-icon">🖱️</div><b>ملحقات</b><small>عرض المنتجات</small></a>
+  <a class="cat" href="#products"><div class="cat-icon">⚙️</div><b>مكونات PC</b><small>عرض المنتجات</small></a>
+</div>
+</section>
+
+<section class="section container" id="products">
+<h2 class="section-title">منتجات مميزة</h2>
+<div class="products" id="grid"></div>
+</section>
+
+<div class="container stats">
+ <div class="stat"><strong>+10K</strong><span>عميل سعيد</span></div>
+ <div class="stat"><strong>+5K</strong><span>منتج متنوع</span></div>
+ <div class="stat"><strong>+3</strong><span>سنوات خبرة</span></div>
+ <div class="stat"><strong>100%</strong><span>أمان في الدفع</span></div>
+</div>
+</main>
+
+<footer id="contact"><div class="container footer-grid">
+ <div><div class="footer-brand">GENERAL <span>STORE</span></div><p>متجرك المتخصص في اللابتوبات والإلكترونيات الحديثة. جودة عالية وخدمة تستحق ثقتك.</p></div>
+ <div><h4>روابط سريعة</h4><ul><li>الرئيسية</li><li>من نحن</li><li>الشروط والأحكام</li><li>سياسة الخصوصية</li></ul></div>
+ <div><h4>خدمة العملاء</h4><ul><li>تتبع الطلب</li><li>الاستبدال والإرجاع</li><li>الأسئلة الشائعة</li><li>تواصل معنا</li></ul></div>
+ <div><h4>تواصل معنا</h4><p>📞 0100 000 0000</p><p>✉ support@generalstore.com</p><p>📍 القاهرة، مصر</p></div>
+</div><div class="container copy">© 2026 GENERAL STORE — جميع الحقوق محفوظة</div></footer>
+<div class="toast" id="toast">تمت إضافة المنتج إلى السلة ✓</div>
+
+<script>
+const products=[
+["ASUS TUF Gaming F15","i5 • 16GB • 512GB SSD • RTX 3050","2,999","3,500","12%","https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=900&q=80"],
+["ASUS ROG Strix G16","i7 • 16GB • 1TB SSD • RTX 4060","49,999","55,000","10%","https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=900&q=80"],
+["Lenovo Legion 5","Ryzen 7 • 16GB • 1TB SSD • RTX 4060","39,999","45,000","8%","https://images.unsplash.com/photo-1611078489935-0cb964de46d6?auto=format&fit=crop&w=900&q=80"],
+["Dell Inspiron 15","i5 • 13th Gen • 8GB • 512GB SSD","17,999","20,000","","https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80"],
+["HP Pavilion 15","i5 • 12th Gen • 8GB • 512GB SSD","19,999","22,500","10%","https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=900&q=80"],
+["MacBook Air M2","8GB • 256GB SSD • 13.6”","29,999","33,000","","https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80"],
+["Acer Nitro V","Core i7 • 16GB • 512GB • RTX 4050","32,999","36,000","8%","https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=900&q=80"],
+["MSI Katana 15","i7 • 16GB • 1TB SSD • RTX 4060","44,999","49,000","10%","https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=900&q=80"]
+];
+const grid=document.getElementById("grid"), search=document.getElementById("search");
+function render(list){
+ grid.innerHTML=list.map((p,i)=>`<article class="card">
+ ${p[4]?`<span class="discount">خصم ${p[4]}</span>`:""}<span class="tag">${i<5?"جديد":"مميز"}</span>
+ <div class="pic"><img loading="lazy" src="${p[5]}" alt="${p[0]}"></div>
+ <div class="info"><h3>${p[0]}</h3><div class="spec">${p[1]}</div><div class="price"><strong>${p[2]} جنيه</strong><span class="old">${p[3]} جنيه</span></div><button class="add" onclick="addToCart()">🛒 أضف للسلة</button></div>
+ </article>`).join("");
+}
+function addToCart(){let n=+document.getElementById("count").textContent+1;document.getElementById("count").textContent=n;let t=document.getElementById("toast");t.classList.add("show");setTimeout(()=>t.classList.remove("show"),1800)}
+search.addEventListener("input",()=>{const q=search.value.trim().toLowerCase();render(products.filter(p=>(p[0]+" "+p[1]).toLowerCase().includes(q)))});
+render(products);
+</script>
+</body>
+</html>
